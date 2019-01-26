@@ -1,9 +1,13 @@
 "use strict"
 
-let income;
+function printSalary(salary){
+    document.getElementById("demo").innerHTML =
+    salary;
+}
 
 function getIncome(){
-    return;
+    var salary = prompt("Please enter your annual salary", "40000");
+    document.write('$' + salary);
 }
 
 function printName(){
