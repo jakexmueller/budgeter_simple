@@ -14,8 +14,13 @@ function runBudgeter(){
     budget.push(transportationBudget);
     var foodBudget = prompt('Please enter your monthly food budget', '300')
     budget.push(foodBudget);
-    document.getElementById('demo').innerHTML=salary;
-    document.getElementById('demo').innerHTML=budget;
+    document.getElementById('salary').innerHTML=salary;
+    for (let i=0; i<budget.length; i++){
+        let budgetTotal = budget[i]+=0;
+        document.getElementById('budget').innerHTML=budgetTotal;
+        //budgetTotal.insert
+    }
+    
 }
 
 function printName(){
