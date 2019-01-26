@@ -19,3 +19,8 @@ function runBudgeter(){
 function printName(){
     console.log('Jacob');
 }
+
+function testTextTransfer(){
+    var testText = prompt('Enter text to test', 'Hey Jacob');
+    document.getElementById('demo').innerHTML=testText;
+}
